@@ -1,0 +1,26 @@
+# 配置 bash 自动补全
+if [ -f /etc/bash_completion ]; then
+  source /etc/bash_completion
+fi
+
+# ===== Git 自动补全 =====
+# curl -o ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+# （1）如果系统有自带脚本，优先使用它
+if [ -f /usr/share/git/completion/git-completion.bash ]; then
+  . /usr/share/git/completion/git-completion.bash
+# （2）否则，使用用户下载的版本
+elif [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+# 可选：自动加载分支提示（PS1 中显示当前分支）
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+  . /usr/share/git/completion/git-prompt.sh
+  export PS1='\u@\h:\w$(__git_ps1 " (%s)")\$ '
+fi
+
+
+# 安装 kubectl 自动补全
+if [ -f $HOME/.kube/completion.bash.inc ]; then
+  source $HOME/.kube/completion.bash.inc
+fi

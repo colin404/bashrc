@@ -1,0 +1,40 @@
+# Basic
+alias r="cd $WORKSPACE/research"
+alias wk="cd $WORKSPACE"
+alias g="cd $GOSRC/github.com"
+
+# Kubernetes
+alias k8s="cd $GOSRC/k8s.io"
+alias sig="cd $GOSRC/sigs.k8s.io"
+
+alias kb="cd $GOSRC/github.com/kubernetes/kubernetes"
+
+# OneXStack
+alias co="cd $GOSRC/github.com/colin404"
+alias mm="cd $GOSRC/github.com/marmotedu"
+alias os="cd $GOSRC/github.com/onexstack"
+
+alias i="cd $GOSRC/github.com/marmotedu/iam"
+alias o="cd $GOSRC/github.com/onexstack/onex"
+alias mb="cd $GOSRC/github.com/onexstack/miniblog"
+alias fa="cd $GOSRC/github.com/onexstack/fastgo"
+alias eai="cd $GOSRC/github.com/onexstack/easyai"
+alias osb="cd $GOSRC/github.com/onexstack/osbuilder"
+
+## QingShu
+alias qs="cd $GOSRC/github.com/qingshu"
+alias q="cd $GOSRC/github.com/qingshu/qingshu"
+
+alias on="export https_proxy=http://127.0.0.1:38457; export http_proxy=http://127.0.0.1:38457"
+alias off="unset https_proxy;unset http_proxy"
+
+alias dbm="mariadb -h 127.0.0.1 -P 3306 -uonex -p'onex(#)666'"
+alias dbr="redis-cli --no-auth-warning -h 127.0.0.1 -a 'onex(#)666'"
+
+# kubectl
+alias octl="kubectl --kubeconfig $HOME/.onex/config"
+
+# kubesphere
+alias ks="cd $GOSRC/github.com/kubesphere/kubesphere"
+
+alias etcdctl="etcdctl --endpoints=https://172.16.16.3:2379 --cacert=/etc/kubernetes/cert/ca.pem --cert=/etc/flanneld/cert/flanneld.pem --key=/etc/flanneld/cert/flanneld-key.pem"
