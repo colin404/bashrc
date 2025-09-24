@@ -43,7 +43,7 @@ alias vi='nvim'
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/libexec/git-core:$PATH"
 
 # Go envs
-export GOVERSION=go1.24.3 # Go 版本设置
+export GOVERSION=go1.25.0 # Go 版本设置
 export GO_INSTALL_DIR=$HOME/go
 export GOROOT=$GO_INSTALL_DIR/$GOVERSION
 export GOPATH=$WORKSPACE/golang

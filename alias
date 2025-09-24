@@ -20,6 +20,7 @@ alias mb="cd $GOSRC/github.com/onexstack/miniblog"
 alias fa="cd $GOSRC/github.com/onexstack/fastgo"
 alias eai="cd $GOSRC/github.com/onexstack/easyai"
 alias osb="cd $GOSRC/github.com/onexstack/osbuilder"
+alias oss="cd $GOSRC/github.com/onexstack/onexstack"
 
 ## QingShu
 alias qs="cd $GOSRC/github.com/qingshu"
@@ -38,3 +39,7 @@ alias octl="kubectl --kubeconfig $HOME/.onex/config"
 alias ks="cd $GOSRC/github.com/kubesphere/kubesphere"
 
 alias etcdctl="etcdctl --endpoints=https://172.16.16.3:2379 --cacert=/etc/kubernetes/cert/ca.pem --cert=/etc/flanneld/cert/flanneld.pem --key=/etc/flanneld/cert/flanneld-key.pem"
+
+# bitget
+alias bg="cd /home/colin/workspace/golang/src/sre-gitlab.bitget.tools"
+alias bk="cd $GOSRC/sre-gitlab.bitget.tools/bke/bke"
