@@ -39,11 +39,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias vi='nvim'
 
-# PATH env
-export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/libexec/git-core:$PATH"
-
 # Go envs
-export GOVERSION=go1.25.0 # Go 版本设置
+export GOVERSION=go1.25.3 # Go 版本设置
 export GO_INSTALL_DIR=$HOME/go
 export GOROOT=$GO_INSTALL_DIR/$GOVERSION
 export GOPATH=$WORKSPACE/golang
@@ -56,8 +53,15 @@ export GOSUMDB=off
 #export GOPROXY=https://proxy.golang.org,direct
 export GOSRC="$WORKSPACE/golang/src"
 
+# PATH env
+export PATH="$HOME/bin:$HOME/.local/bin:$GOSRC/github.com/onexstack/tools/images:/usr/local/bin:/usr/libexec/git-core:$PATH"
+
 # Other envs
 export ETCDCTL_API=3
+
+export HELM_MAX_DOWNLOAD_SIZE=52428800
+
+source $HOME/bin/switch.sh
 
 # tabtab source for packages
 # uninstall by removing these lines

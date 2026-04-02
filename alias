@@ -15,31 +15,44 @@ alias mm="cd $GOSRC/github.com/marmotedu"
 alias os="cd $GOSRC/github.com/onexstack"
 
 alias i="cd $GOSRC/github.com/marmotedu/iam"
+alias oss="cd $GOSRC/github.com/onexstack/onexstack"
 alias o="cd $GOSRC/github.com/onexstack/onex"
-alias mb="cd $GOSRC/github.com/onexstack/miniblog"
+alias ox="cd $GOSRC//feizaonet.com/techedu/oxcloud"
+#alias mb="cd $GOSRC/github.com/onexstack/miniblog"
+alias mb="cd /home/colin/workspace/golang/src/github.com/onexstack/osbuilder-demo/miniblog"
 alias fa="cd $GOSRC/github.com/onexstack/fastgo"
 alias eai="cd $GOSRC/github.com/onexstack/easyai"
+alias osdr="cd $GOSRC/github.com/onexstack/osbuilder-demo"
+alias om="cd $GOSRC/github.com/onexstack/osbuilder-demo/miniblog"
+alias osd="cd $GOSRC/github.com/onexstack/osbuilder-demo/osdemo"
 alias osb="cd $GOSRC/github.com/onexstack/osbuilder"
-alias oss="cd $GOSRC/github.com/onexstack/onexstack"
+alias osm="cd $GOSRC/github.com/onexstack/osbuilder/internal/osbuilder/cmd"
+alias tpl="cd /home/colin/workspace/golang/src/github.com/onexstack/osbuilder/internal/osbuilder/tpl/project"
 
 ## QingShu
-alias qs="cd $GOSRC/github.com/qingshu"
+alias qs="cd $GOSRC/github.com/"
 alias q="cd $GOSRC/github.com/qingshu/qingshu"
 
-alias on="export https_proxy=http://127.0.0.1:38457; export http_proxy=http://127.0.0.1:38457"
-alias off="unset https_proxy;unset http_proxy"
+#alias on="export https_proxy=http://127.0.0.1:38457; export http_proxy=http://127.0.0.1:38457; export all_proxy=socks5://127.0.0.1:7897"
+alias on="export https_proxy=http://127.0.0.1:7897; export http_proxy=http://127.0.0.1:7897"
+alias off="unset https_proxy;unset http_proxy;unset all_proxy"
 
-alias dbm="mariadb -h 127.0.0.1 -P 3306 -uonex -p'onex(#)666'"
-alias dbr="redis-cli --no-auth-warning -h 127.0.0.1 -a 'onex(#)666'"
+#alias dbm="mariadb -h 127.0.0.1 -P 3306 -uonex -p'onex(#)666'"
+#alias dbr="redis-cli --no-auth-warning -h 127.0.0.1 -a 'onex(#)666'"
 
 # kubectl
 alias octl="kubectl --kubeconfig $HOME/.onex/config"
 
 # kubesphere
-alias ks="cd $GOSRC/github.com/kubesphere/kubesphere"
+alias ksp="cd $GOSRC/github.com/kubesphere/kubesphere"
 
 alias etcdctl="etcdctl --endpoints=https://172.16.16.3:2379 --cacert=/etc/kubernetes/cert/ca.pem --cert=/etc/flanneld/cert/flanneld.pem --key=/etc/flanneld/cert/flanneld-key.pem"
 
 # bitget
 alias bg="cd /home/colin/workspace/golang/src/sre-gitlab.bitget.tools"
 alias bk="cd $GOSRC/sre-gitlab.bitget.tools/bke/bke"
+alias ss="cd $GOSRC/sre-gitlab.bitget.tools/srestack"
+
+alias ks="switch"
+alias fz="cd /home/colin/workspace/golang/src/feizaonet.com"
+alias jvs="cd $GOSRC/feizaonet.com/infra/jarvis"
